@@ -1,4 +1,6 @@
-# Testing Journey: Password Validator
+# Testing Journey: 
+
+## 1. Password Validator
 
 A small Python project where I practice writing tests with pytest. It contains a password validation function and a test suite that checks each rule on its own.
 
@@ -60,7 +62,7 @@ Each failing-password test breaks exactly one rule, so a failure shows which rul
 
 
 
-## word_count
+## 2. word_count
 
 `word_count(text)` returns a dictionary of how many times each word appears.
 
