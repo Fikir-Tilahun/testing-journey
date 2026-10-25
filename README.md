@@ -57,3 +57,19 @@ Each failing-password test breaks exactly one rule, so a failure shows which rul
 - A good test breaks exactly one rule.
 - Break your own code on purpose to check that your tests notice.
 - Check for a whole category of input (all whitespace), not just the one case you thought of.
+
+
+
+## word_count
+
+`word_count(text)` returns a dictionary of how many times each word appears.
+
+Rules:
+- Capitalization is ignored (`"The"` and `"the"` are the same word)
+- Punctuation at the ends of words is ignored (`"hello,"` counts as `hello`)
+- Extra spaces are ignored
+- Empty text or `None` returns `{}`
+
+Files: `word_count.py` and `test_word_count.py`
+
+Bug the tests found: a lone punctuation mark like `-` was counted as an empty word. I wrote the failing test first, then fixed it.
